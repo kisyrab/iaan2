@@ -1,0 +1,52 @@
+/* 공통기본CSS설정(리셋) 태그가 가진 기본 속성을 나만의 스탠다드로 설정*/
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+html{font-size: 10px; height: 100%;}
+ol, ul, li{list-style: none;}
+a{text-decoration: none; color: #333;}
+
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: normal;
+    src: url(font/NanumGothic-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Nanum Gothic-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url(font/NanumGothic-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Nanum Gothic-ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url(font/NanumGothic-ExtraBold.ttf);
+}
+
+body{font-family: "Nanum Gothic", sans-serif; overflow-x: hidden; font-size: 1.3rem; color: #555; height: 100%;}
+
+.skip{position: absolute; width: 100%; margin: 0 auto;}
+.skip a{display: block; height: 1px; margin-bottom: -1px; overflow: hidden; white-space: nowrap; width: 1px;}
+.skip :focus, .skip a:active{
+    height: 18px; width: 130px; padding: 5px; margin: 0;
+    color: #000; text-align: center; font-weight: bold;
+}
+
+/* h1{font-size: 2em; margin: 0.67em 0;}
+h2{font-size: 1.5em; margin: 0.87em 0;}
+h3{font-size: 1.17em; margin: 1em 0;}
+h4{font-size: 1em; margin: 1.33em 0;}
+h5{font-size: 0.83em; margin: 1.67em 0;}
+h6{font-size: 0.67em; margin: 2.33em 0;} */
+
+.blind{position: absolute; left: -9999px; font-size: 0;}
+
+a:link, a:hover, a:active, a:focus{text-decoration: none; cursor: pointer; color: #555;}
+legend, hr{color: #222;}
+caption{overflow: hidden; position: absolute; top: 0; left: 0; width: 1px; height: 1px; font-size: 0; line-height: 0 !important;}
+address, em{font-style: normal;}
+table{border-collapse: collapse;}
+textarea { resize: none; }

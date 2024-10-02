@@ -1,0 +1,323 @@
+/* 자주,반복적으로 사용되는 CSS */
+.center{max-width: 1050px; margin: 0 auto; position: relative;}
+
+.flex_fixing01{display: flex; justify-content: space-between;}
+.flex_fixing02{display: flex; justify-content: flex-end;}
+.flex_fixing03{display: flex; justify-content: flex-start;}
+.flex_fixing04{display: flex; justify-content: space-around;}
+
+/* 헤더메뉴 */
+.headerWrap{
+    width: 100%; height: 100px; transition: all 0.7s;  
+    position: fixed; top: 0; left: 0; z-index: 1000; 
+    /* border: 1px solid yellow; */overflow: hidden;
+}
+.headerWrap.bgON{background-color: #00000067; height: 270px; z-index: 1001; }
+
+
+header{
+    width: 100%;
+    position: relative;
+    /* z-index: 1000; */
+    height: 100px;
+    cursor: pointer;
+    transition: all 0.5s;
+    padding: 0 2%;
+    top: 0;
+    /* border: 1px solid green; */
+}
+
+header h1{}
+header h1 a{
+    background: url("img/logo.svg") no-repeat center;
+    width: 99px; height: 34px;
+    text-indent: -9999px;
+    transition: all 0.3s;
+    padding: 50px 0;
+    display: block;
+}
+header h1 a.on{background: url("img/logo_ori.svg") no-repeat center;}
+header nav{
+    height: 100px;
+    z-index: 101;
+    width: 100%;
+    padding: 0 30px;
+    transition: all 0.5s;
+    max-width: 150%; 
+}
+.main{
+    margin: 0 auto;
+    align-items: center;
+    height: 100px;
+    width: 80%;
+    max-width: 200%;
+}
+.main>li{
+    width: 80%;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+.main>li>a{
+    transition: all 0.3s;
+    /* border: 1px solid red; */
+    font-weight: 900;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    position: relative;
+    color: #fff;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.main>li:hover>a{color: #fff;}
+
+.main>li>a:before{
+    content: "";
+    position: absolute;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+    top: -2px; left: 10px;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background-color: #f93;
+}
+.main>li:hover>a:before{transform: scale(1);}
+.sub{
+    position: absolute;
+    top: 60px; left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 100%;
+    height: 170px;
+    line-height: 1.5;
+    text-align: center;
+    display: none;
+}
+.sub li{margin: 10px 0;}
+.sub li a{
+    text-align: center;
+    margin: 15px 0;
+    letter-spacing: 1px;
+    color: #fff;
+    transition: all 0.3s;
+}
+.sub li a:hover{
+    color: #f93;
+    font-weight: 500;
+}
+#indicator
+{   /* display: none; */
+    position: absolute;
+    left: 5%;
+    bottom: 20px;
+    width: 0%;
+    height: 2px;
+    background-color: #f93;
+    border-radius: 5px;
+    transition: 0.2s ease left;
+    z-index: 300;
+}
+.gnb{
+    cursor: pointer;
+    width: 100px; height: 100px; text-align: center;
+    display: flex; justify-content: space-between; align-items: center;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    z-index: 200;
+}
+.gnb a{}
+.gnb a svg{width: 30px; height: 30px; margin-top: 3px;}
+
+.btn{
+    width: 30px; 
+    height: 30px;
+    position: relative;    
+    /* border: 1px solid red; */
+}
+.btn span{
+    display: block;
+    width: 30px; height: 3px;
+    background-color: transparent;
+    position: absolute;
+}
+.btn span.span1{top: 0; transition: all 0.3s ease-in-out;}
+.btn span.span1::before{
+    content: "";
+    float: left;
+    width: 20px; height: 3px;
+    background-color: #fff;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.btn span.span1::after{
+    content: "";
+    float: right;
+    width: 3px; height: 3px;
+    background-color: #fff;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);}
+
+.btn:hover span.span1::before{width: 3px;}
+.btn:hover span.span1::after{width: 20px;}
+.btn span.span2{top: 50%; transform: translateY(-50%);}
+.btn span.span2::before{
+    content: "";
+    float: left;
+    width: 3px; height: 3px;
+    background-color: #fff;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.btn span.span2::after{
+    content: "";
+    float: right;
+    width: 20px; height: 3px;
+    background-color: #fff;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.btn:hover span.span2::before{width: 20px;}
+.btn:hover span.span2::after{width: 3px;}
+.btn span.span3{bottom: 0;}
+.btn span.span3::before{
+    content: "";
+    float: left;
+    width: 20px; height: 3px;
+    background-color: #fff;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+.btn span.span3::after{
+    content: "";
+    float: right;
+    width: 3px; height: 3px;
+    background-color: #fff;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+.btn:hover span.span3::before{width: 3px;}
+.btn:hover span.span3::after{width: 20px;}
+
+.box_box{width: 100%; height: 200px; overflow: hidden;}
+.box{width: 200%; height: 500px; border-radius: 50%; transform: translateX(-25%);}
+
+
+/* 삼선버튼 호버시 메뉴 */
+.hoverMenu{
+    /* display: none; */
+    z-index: 1000;
+    width: 300px; height: 100vh; 
+    position: fixed; 
+    top: 0; 
+    right: -300px;
+    background-color: #000000c9;
+} 
+/* .hoverMenu.show{display: block; transition: all 1s;} */
+.xButton{margin: 20px; cursor: pointer; transition: all 0.3s; width: 19px; height: 23px;}
+.xButton:hover{transform: rotate(180deg);}
+.xButton svg{width: 20px; height: 20px;}
+.hoverMenu nav{margin: 50px auto; width: 200px;}
+.hoverMainMenu{}
+.hoverMainMenu>li{width: 200px;}
+.hoverMainMenu>li>a{
+    display: block;
+    height: 60px; line-height: 60px;
+    text-align: center;
+    font-size: 1.5em;
+    transition: all 0.5s;
+    font-weight: 900;
+    color: #fff;
+}
+.hoverMainMenu>li:hover>a{color: #f96;}
+.hoverSub{display: none;}
+.hoverSub li a{
+    font-weight: 100;
+    font-size: 1.4rem;
+    display: block;
+    height: 30px; line-height: 30px;
+    text-align: center;
+    color: #777;
+    transition: all 0.5s;
+}
+.hoverSub li a:hover{color: #f96; /* border-bottom: 1px solid #f96; */}
+
+
+
+/* 푸터 */
+footer{font-size: 3rem;}
+.con_bottom{align-items: center;}
+.con_bottom_left{
+    margin: 150px 0 50px 100px;
+    /* border: 1px solid red; */
+    
+}
+.con_bottom_left .intro{
+    /* border: 1px solid red; */
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.con_bottom_left .intro p{
+    margin-top: 10px;
+}
+
+.con_bottom_left .info{
+    color: #999;
+    font-size: 1.3rem;
+    margin: 30px 0;
+
+}
+.con_bottom_left .copy{
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+.con_bottom_right{
+    margin: 80px 100px 50px 0;
+    /* border: 1px solid blue; */
+    text-align: right;
+}
+.con_bottom_right .mail{
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+.con_bottom_right .telNum{
+    font-weight: 800;
+    font-size: 3rem;
+    margin: 30px 0;
+}
+.con_bottom_right .time{font-size: 1.5rem;}
+
+.con_bottom_right .topbutton{
+    width: 64px; height: 65px;
+    margin: 15px 0 0 auto;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.con_bottom_right .topbutton img{transition: all 0.2s;}
+.con_bottom_right .topbutton:hover img{box-shadow: 0 0 2px #aaa;}
+
+
+@media (max-width : 1025px) {
+    .mainMenu {display: none;}
+    header{padding: 0 70px;}
+}
+
+@media (max-width : 768px) {
+    .con_top_left{width: 100%;}
+    .con_bottom_left{padding: 0 5%;  /* border: 1px solid blue; */ margin: 20px 0; width: 90%;}
+    .con_bottom{flex-direction: column; }
+    .con_bottom .con_bottom_right{
+        margin: 2% 0;
+        max-width: 90%; padding: 0 5%;
+        display: flex; align-items: center; /* justify-content: space-between; */
+    }
+    .con_bottom_right .mail{font-size: 1.8rem;}
+    .con_bottom_right .telNum{font-size: 1.5rem; margin: 0 5%;}
+    .con_bottom_right .time{font-size: 1rem;}
+}
+@media (max-width : 400px){
+    .con_bottom .con_bottom_right{flex-wrap: wrap; margin: 0 auto;}
+    .con_bottom_right .mail{font-size: 1rem;}
+    .con_bottom_right .telNum{font-size: 1rem; margin: 0 1%;}
+    .con_bottom_right .time{font-size: 1rem;}
+    .con_bottom_right .topbutton{margin: 0 auto;}
+
+}

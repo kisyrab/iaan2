@@ -1,0 +1,210 @@
+@media (max-width : 1025px) {
+    .section02_inner .s2_circle4 {flex-wrap: wrap;}
+    .section02_inner .s2_circle4 li {
+        width: 50%; height: 50%; margin: 20px 0;
+    }
+    .section02_inner .s2_circle4 li a{
+        border-radius: 0%;
+        width: 25rem; height: 25rem;
+        padding-top: 150px;
+    }
+    
+    /* ////// */
+
+    .portfolio_title{display: flex; flex-direction: column;}
+    .portfolio_title h2{ padding-left: 0px; margin-bottom: 50px; }
+    .portfolio_title ul li a{
+        display: block;
+        font-size: 1.2rem; font-weight: 900;
+        width: 100px; height: 50px;
+        padding: 0;
+        line-height: 50px; text-align: center;
+    }
+    .p_tree_box{
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+        height:  200%;
+        justify-content: center !important;
+    }
+
+
+    .section03{height: 650px; position: relative; }
+    .bluebox{
+        width: 45%; height: 300px; 
+        margin-left:5%; 
+        /* float: none; */
+        
+    }
+    .p_tree_box{display: block;}
+    .p_tree_box .p_tree_img1{width: 100%;}
+    .bluebox *{width: 50%; background-color: transparent;}
+    .portfolio_inner_text{
+        width: 45%; height: 300px; 
+        /* float: none; */
+        /* position: absolute; top: 0; right: 33px; */
+        background-color: #010d3f;
+        color: #fff;
+        margin-right:5%;
+    }
+    .portfolio_inner_text h3, .portfolio_inner_text h4, .portfolio_inner_text p{margin: 10px;}
+
+    .portfolio_inner_text .vertical_bar{
+        background-color: #fff;
+        margin: 10px; 
+    }
+
+    .portfolio_inner_text a{
+        display: block;
+        position: absolute; top: 60%; right: 6%;
+        border: none;
+        width: 100px; height: 100px; line-height: 100px;
+        border-radius: 30%;
+    }
+    .portfolio_inner_text a:hover{
+        width: 100px; height: 100px;
+        border-radius: 50%;
+        /* border-bottom: 1px solid #fff; */
+        /* background: transparent; */
+    }
+
+    .section04{flex-direction: column;}
+    .sec4icon{display: none;}
+
+    .sec4box{
+        padding: 0 80px;
+        justify-content: space-between;
+        flex-direction: row;
+        border-bottom: 1px solid #dddddd31;
+    }
+
+    .sec4box h2, .sec4box p{padding: 0;}
+
+    .footer h2{
+        text-align: center;
+        margin: 50px auto; 
+    }
+    .con_top{
+        flex-wrap: wrap;
+        /* overflow: hidden; */
+        /* border: 1px solid red; */
+    }
+    .con_top_left{
+        width: 80%; margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+        /* padding-left: 30px; */
+        /* border: 1px solid red; */
+    }
+    .con_top_right{
+        width: 100%;
+        /* border: 1px solid red; */
+        margin: 10px auto !important;
+    }
+    .con_form{
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+    .con_form input{
+        width: 400px;
+        padding: 15px;
+        margin: 5px auto;
+    }
+    .con1{width: 400px;}
+    .con1 input{width: 50%; margin: 5px 0; }
+    .con2{width: 400px;}
+    .con2 textarea{
+        width: 50%; height: 150px;
+        padding: 15px;
+    }
+    .con3 {width: 400px;}
+    .con3 input{width: 50%; height: 50px; margin-top: 10px;}
+    .con_bottom{margin: 0 auto; /*  border: 1px solid red; */}
+    .con_bottom_left{margin: 0 auto;/*  border: 1px solid red; */}
+    .con_bottom_left .intro{font-size: 12px;}
+    .con_bottom_left .info{font-size: 12px;}
+    .con_bottom_right{line-height: 2; margin: 0 auto; /* text-align: center;  *//*  border: 1px solid red; */}
+    .con_bottom_right .mail{font-size: 3rem;}
+    .con_bottom_right .telNum{font-size: 2rem;}
+    .con_bottom_right .time{font-size: 1rem;}
+
+
+}
+
+
+
+@media (max-width : 768px) {
+
+    .mainVideo{display: none;}
+    .section01{background: url("../images/main01.jpg") no-repeat center / cover;}
+    .scrolldown{display: none;}
+
+    
+    /* ////// */
+    .section02_inner .s2_circle4 li {
+        width: 100%; height: 25%; margin: 20px 0;
+    }
+    
+    .portfolio_title{display: flex; flex-direction: column;}
+    .portfolio_title h2{ padding-left: 0px; margin-bottom: 50px; }
+    .portfolio_title ul li a{
+        display: block;
+        font-size: 1.2rem; font-weight: 900;
+        width: 100px; height: 50px;
+        padding: 0;
+        line-height: 50px; text-align: center;
+    }
+    .p_tree_box{
+        flex-direction: column;
+        margin: 0 auto;
+        height:  200%;
+        justify-content: center !important;
+    }
+
+
+    .section03{height: 650px;}
+    .bluebox{
+        width: 90%; height: 300px; margin: 0 auto; float: none;
+        position: relative;
+    }
+    .bluebox *{width: 50%; margin: 0 auto;}
+    .portfolio_inner_text{
+        width: 90%; height: 300px; margin: 0 auto;
+        float: none;
+        position: absolute; top: 0; left: 5%;
+        background-color: #00000073;
+        color: #fff;
+    }
+    .portfolio_inner_text h3, .portfolio_inner_text h4, .portfolio_inner_text p{margin: 10px;}
+
+    .portfolio_inner_text .vertical_bar{
+        background-color: #fff;
+        margin: 10px; 
+    }
+
+    .portfolio_inner_text a{
+        display: block;
+        position: absolute; top: 60%; right: 20px;
+        border: none;
+        width: 100px; height: 100px; line-height: 100px;
+        border-radius: 30%;
+    }
+    .portfolio_inner_text a:hover{
+        width: 100px; height: 100px;
+        border-radius: 50%;
+        /* border-bottom: 1px solid #fff; */
+        /* background: transparent; */
+    }
+    .con_top_left{width: 100%;}
+    .con_bottom_left{padding: 0 5%;}
+    .con_bottom{flex-direction: column; }
+    .con_bottom .con_bottom_right{
+        width: 100%; padding: 0 5%;
+        display: flex; align-items: center; justify-content: space-between;}
+    .con_bottom_right .mail{font-size: 1.5rem;}
+    .con_bottom_right .telNum{font-size: 1rem;}
+    .con_bottom_right .time{font-size: 0.7rem;}
+
+}

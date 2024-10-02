@@ -1,0 +1,106 @@
+.mainBG{
+    width: 100%; height: 600px;
+    background: url("../images/company/Curves_1.jpg") no-repeat center / cover;
+}
+
+.section01{
+    overflow: hidden;
+    color: #444;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.section01::after{
+    content: "IAAN";
+    font-size: 40vw;
+    font-weight: 900;
+    position: absolute;
+    height: 100%;
+    left: 50%; bottom: -5%; transform: translateX(-50%);
+    color: transparent;
+    -webkit-text-stroke: 1px #dddddd9f;
+    font-family: "arial";
+    z-index: -2;
+}
+.s1Inner{width: 100%; max-width: 1400px; height: 100vh; margin: 0 auto;}
+.s1MainText{}
+.s1MainText .s1Title{margin: 150px 0; font-size: 3.2rem; font-weight: 600;}
+.s1MainText .s1SubTitle{margin: 75px 0; font-size: 2.5rem; font-weight: 600; color: #666;}
+.s1MainText .s1text01{line-height: 1.5; color: #666; font-weight: 200;}
+.Bold{font-size: 2rem; font-weight: 790;}
+.Orange{color: rgb(255, 117, 48);}
+
+.s1Graphic{line-height: 1.5;}
+.s1Graphic .wave{
+    position: absolute; top: 55%; left: 40%; 
+}
+.s1Graphic .s1text02{position: absolute; top: 75%; left: 20%; font-size: 1.5rem;/*  border: 1px solid red; */}
+.s1Graphic .s1text03{position: absolute; top: 60%; right: 13%; font-size: 1.5rem; /* border: 1px solid blue; */}
+
+
+
+
+.section02{width: 100vw; height: auto; background-color: #f5f5f5; }
+
+.section02 .s2Inner{
+    width: 100%; max-width: 1400px; height: auto;
+    margin: 0 auto; color: #333;
+}
+.s2Inner .s2Title{padding: 150px 0; font-size: 3rem;}
+
+.s2Box{
+    display: flex; justify-content: space-between; align-items: center;
+    line-height: 1.5; padding-bottom: 60px; 
+    
+}
+
+.s2Box .s2text{font-weight: 100; font-size: 3rem;}
+.s2Box .s2text .s2Bold{font-size: 2.5rem;}
+.s2Box .s2P{color: #666; margin-top: 30px; line-height: normal; font-size: 1.5rem; line-height: 1.5;}
+.s2Box02 .s2text2-2{margin-right: 50px;}
+.s2Box03 .s2text3-1 .s2Orange{font-size: 2.5rem; font-weight: 700;}
+.s2Box03 .s2text3-1 .s2Bold{font-size: 2.5rem; font-weight: 700; color: #333;}
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////// */
+@media (max-width : 1024px) {
+    .section01{padding: 0 40px;}
+    .s1Graphic .wave{width: 50%;}
+    .section02{ padding: 0 40px;}
+    .s2Box .s2text{font-size: 2.5rem;}
+    .s2Box .s2text .s2Bold{font-size: 2.1rem;}
+    .s2Box li{ width: 40%;}
+    .s2Box li img{width: 90%;}
+}
+
+
+@media (max-width : 768px) {
+
+    .section01::after{display: none;}
+    .s1MainText{padding: 0 50px; text-align: center;}
+    .s1MainText .s1Title{margin: 150px 0 50px 0;}
+    .s1MainText .s1SubTitle{margin: 20px 0;}    
+    .s1Graphic{
+        width: 100%; height: 100%;
+        /* border: 1px solid green; */
+    }
+    .s1Graphic .wave{width: 80%; left: 10%; top: 60%;}
+    .s1Graphic .s1text02{font-size: 1.5rem; text-align: center; /* left: 22%; top: 73%;  border: 1px solid red;*/}
+    .s1Graphic .s1text03{font-size: 1.5rem; text-align: center;/*  right: 29%;  */top: 66%;/*  border: 1px solid blue; */}
+
+    .s2Inner .s2Title{text-align: center; /* border: 1px solid red; */ font-size: 3.5rem;}
+
+    .s2Box{flex-wrap: wrap;}
+    .s2Box li{/* border: 1PX solid RED; */ width: 100%;  text-align: center; margin-bottom: 20px;}
+    .s2Box li img{width: 70%;}
+    .s2Box02{display: flex; flex-direction: column;}
+    .s2Box02 li:nth-child(1){order: 2;}
+    .s2Box02 li:nth-child(2){order: 1;}
+
+
+} 
