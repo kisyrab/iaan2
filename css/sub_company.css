@@ -3,14 +3,14 @@
     background: url("../images/company/Curves_1.jpg") no-repeat center / cover;
 }
 
-.section01{
+.section001{
     overflow: hidden;
     color: #444;
     width: 100%;
     height: 100vh;
     position: relative;
 }
-.section01::after{
+.section001::after{
     content: "IAAN";
     font-size: 40vw;
     font-weight: 900;
@@ -40,9 +40,9 @@
 
 
 
-.section02{width: 100vw; height: auto; background-color: #f5f5f5; }
+.section002{width: 100vw; height: auto; background-color: #f5f5f5; }
 
-.section02 .s2Inner{
+.section002 .s2Inner{
     width: 100%; max-width: 1400px; height: auto;
     margin: 0 auto; color: #333;
 }
@@ -69,9 +69,9 @@
 /* ////////////////////////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////////////////// */
 @media (max-width : 1024px) {
-    .section01{padding: 0 40px;}
+    .section001{padding: 0 40px;}
     .s1Graphic .wave{width: 50%;}
-    .section02{ padding: 0 40px;}
+    .section002{ padding: 0 40px;}
     .s2Box .s2text{font-size: 2.5rem;}
     .s2Box .s2text .s2Bold{font-size: 2.1rem;}
     .s2Box li{ width: 40%;}
@@ -81,7 +81,7 @@
 
 @media (max-width : 768px) {
 
-    .section01::after{display: none;}
+    .section001::after{display: none;}
     .s1MainText{padding: 0 50px; text-align: center;}
     .s1MainText .s1Title{margin: 150px 0 50px 0;}
     .s1MainText .s1SubTitle{margin: 20px 0;}    

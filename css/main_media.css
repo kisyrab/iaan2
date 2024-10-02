@@ -90,7 +90,7 @@
         /* border: 1px solid red; */
     }
     .con_top_left{
-        width: 80%; margin: 0 auto;
+        width: 100%; margin: 0 auto;
         text-align: center;
         overflow: hidden;
         /* padding-left: 30px; */
@@ -108,19 +108,19 @@
         text-align: center;
     }
     .con_form input{
-        width: 400px;
+        width: 100%;
         padding: 15px;
         margin: 5px auto;
     }
-    .con1{width: 400px;}
-    .con1 input{width: 50%; margin: 5px 0; }
-    .con2{width: 400px;}
+    .con1{width: 100%;}
+    .con1 input{width: 80%; margin: 5px 0; }
+    .con2{width: 100%;}
     .con2 textarea{
-        width: 50%; height: 150px;
+        width: 80%; height: 150px;
         padding: 15px;
     }
-    .con3 {width: 400px;}
-    .con3 input{width: 50%; height: 50px; margin-top: 10px;}
+    .con3 {width: 100%;}
+    .con3 input{width: 80%; height: 50px; margin-top: 10px;}
     .con_bottom{margin: 0 auto; /*  border: 1px solid red; */}
     .con_bottom_left{margin: 0 auto;/*  border: 1px solid red; */}
     .con_bottom_left .intro{font-size: 12px;}
@@ -152,8 +152,8 @@
     .portfolio_title ul li a{
         display: block;
         font-size: 1.2rem; font-weight: 900;
-        width: 100px; height: 50px;
-        padding: 0;
+        width: 80px; height: 50px;
+        margin: 0 1%;
         line-height: 50px; text-align: center;
     }
     .p_tree_box{
@@ -164,7 +164,7 @@
     }
 
 
-    .section03{height: 650px;}
+    .section03{height: 500px;}
     .bluebox{
         width: 90%; height: 300px; margin: 0 auto; float: none;
         position: relative;
